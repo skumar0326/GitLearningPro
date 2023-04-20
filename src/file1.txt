@@ -1,1 +1,2 @@
 This is initial message
+This is for fetch and merge
