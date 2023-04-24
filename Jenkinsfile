@@ -42,7 +42,7 @@ stages {
         }
     
 }
-}
+
 
 post {
   always {
@@ -52,4 +52,4 @@ post {
 }
 
     
-    
+}
