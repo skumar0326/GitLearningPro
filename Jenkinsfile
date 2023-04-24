@@ -15,11 +15,9 @@ pipeline {
     }
     stages {
         stage('Make executable') {
-            steps {
-               steps {
-        bat 'icacls "${env.WORKSPACE}\\src\\fibonacci.sh" /grant:r "${env.COMPUTERNAME}\\${env.USERNAME}:(RX)"'
-    }
-            }
+              steps {
+                 bat 'icacls "${env.WORKSPACE}\\src\\fibonacci.sh" /grant:r "${env.COMPUTERNAME}\\${env.USERNAME}:(RX)"'
+              }
         }
         stage('Relative path') {
             steps {
