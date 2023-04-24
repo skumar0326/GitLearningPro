@@ -42,6 +42,7 @@ stages {
         }
     
 }
+}
 
 post {
   always {
