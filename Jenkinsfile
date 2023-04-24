@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                bat("..\\src\\fibonacci.sh ${env.NUMBER}")
+                bat(".\\src\\fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Full path') {
