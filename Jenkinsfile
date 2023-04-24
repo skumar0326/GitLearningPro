@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                bat("..\src\fibonacci.sh ${env.NUMBER}")
+                bat("..\\src\\fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Full path') {
@@ -32,7 +32,7 @@ pipeline {
         stage('Change directory') {
             steps {
                 dir("${env.WORKSPACE}/scripts"){
-                    bat("..\fibonacci.sh ${env.NUMBER}")
+                    bat("..\\fibonacci.sh ${env.NUMBER}")
                 }
             }
         }
