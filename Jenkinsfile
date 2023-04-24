@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Make executable') {
             steps {
-                bat('chmod +x .\src\fibonacci.sh')
+                bat('chmod +x .\\src\\fibonacci.sh')
             }
         }
         stage('Relative path') {
