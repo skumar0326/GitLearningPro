@@ -15,7 +15,7 @@ pipeline {
     }
     stages {
         stage('Make executable') {
-              steps 
+            steps {
                 bat("icacls .\\\\scripts\\\\fibonacci.bat \\\\grant:r \"Users:(RX)\"")
               }
         }
