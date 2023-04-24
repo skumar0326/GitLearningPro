@@ -14,15 +14,14 @@ triggers{
 cron('H(0-29)/10 * * * *') 
 }
 
-    stages {
-        stage('Requirments') {
+   
+stages {
+    
+     stage('Requirments') {
             steps {
                 echo 'This is for requirments'
             }
         }
-    }
-}
-stages {
         stage('Build') {
             steps {
                 echo 'This is For build stage'
