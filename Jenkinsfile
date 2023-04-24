@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Make executable') {
               steps 
-                 bat (icacls .\scripts\fibonacci.bat /grant:r "Users:(RX)")
+                 bat (icacls .\\scripts\\fibonacci.bat \\grant:r "Users:(RX)")
               }
         }
         stage('Relative path') {
