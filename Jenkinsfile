@@ -28,7 +28,8 @@ pipeline {
         }
         stage('Full path') {
             steps {
-                bat("C:\\Program Files (x86)\\Jenkins\\workspace\\fibonacciScriptFromPipeline\\src\\fibonacci.sh ${env.NUMBER}")
+                bat('"C:\\Program Files (x86)\\Jenkins\\workspace\\fibonacciScriptFromPipeline\\src\\fibonacci.sh" ${env.NUMBER}')
+
             }
         }
         stage('Change directory') {
